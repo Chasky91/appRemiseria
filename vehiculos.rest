@@ -1,0 +1,31 @@
+###
+GET http://localhost:3000/vehiculos
+
+
+###
+GET http://localhost:3000/vehiculos/22
+
+###
+POST http://localhost:3000/vehiculos
+content-type: application/json
+
+{
+    "año": 2021,
+    "marca": "Mercedez",
+    "modelo": "Algo",
+    "patente": "ABC123"
+}
+
+###
+PUT http://localhost:3000/vehiculos/2
+content-type: application/json
+
+{
+    "año": 2022,
+    "marca": "Volvo",
+    "modelo": "Taunus",
+    "patente": "ABC123"
+}
+
+###
+DELETE http://localhost:3000/vehiculos/3
