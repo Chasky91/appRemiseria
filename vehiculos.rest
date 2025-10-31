@@ -3,7 +3,7 @@ GET http://localhost:3000/vehiculos
 
 
 ###
-GET http://localhost:3000/vehiculos/22
+GET http://localhost:3000/vehiculos/2
 
 ###
 POST http://localhost:3000/vehiculos
