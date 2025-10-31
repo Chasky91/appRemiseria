@@ -1,4 +1,22 @@
-import { vehiculos } from '../model/vehiculoModel.js'
+import vehiculos from "../vehiculos.js"
+
+export const todos = (req, res) => {
+    res.json({"respuesta JSON": vehiculos})
+}
+
+
+export const uno = (req, res) => {
+    
+    let id = parseInt(req.params.id)
+
+    for (let i = 0; i < vehiculos.length; i++) {
+        if (id === vehiculos[i].idVehiculo) {
+            return res.json({"respuesta JSON": vehiculos[i]})
+        }        
+    }
+    res.status(404).json({"respuesta JSON": "No existe un vehiculo con esa id vehiculo"})
+}
+
 
 export const crear = (req, res) => {
     let body = req.body

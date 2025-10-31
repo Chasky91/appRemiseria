@@ -6,7 +6,6 @@ export const vehiculoRouter= Router()
 
 
 vehiculoRouter.get("/",todos)
-vehiculoRouter.get("/",todos)
 vehiculoRouter.get("/:id", uno)
 vehiculoRouter.post("/", crear)
 vehiculoRouter.put("/:id", actualizar)
